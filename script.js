@@ -51,3 +51,10 @@ const data = [
     {id:50,first_name:"Nerissa",gender:"Male",car_model:"F150",car_year:2002,shirt_size:"3XL"}
 ]
 
+//1
+const male = data.filter(x => x.gender == "Male")
+console.log(male)
+
+//2
+const car2000 = data.filter(x => x.car_year >= 2000)
+console.log(car2000)
