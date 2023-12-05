@@ -56,5 +56,9 @@ const male = data.filter(x => x.gender == "Male")
 console.log(male)
 
 //2
-const car2000 = data.filter(x => x.car_year >= 2000)
+const car2000 = data.filter(x => x.car_year > 2000)
 console.log(car2000)
+
+//3
+const abc = data.filter(x => x.shirt_size == "XS" || x.shirt_size == "S").sort((a, b) => a.first_name > b.first_name ? 1 : -1)
+console.log(abc)
