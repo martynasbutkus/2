@@ -62,3 +62,7 @@ console.log(car2000)
 //3
 const abc = data.filter(x => x.shirt_size == "XS" || x.shirt_size == "S").sort((a, b) => a.first_name > b.first_name ? 1 : -1)
 console.log(abc)
+
+//4
+const abcData = data.filter(x => x.shirt_size === "XS" || x.shirt_size === "S").sort((a, b) => a.first_name > b.first_name ? 1 : -1).map(({id, first_name, shirt_size}) => ({id, first_name, shirt_size}))
+console.log(abcData);
